@@ -1,0 +1,118 @@
+:root {
+    --sailor-blue: #00203FFF;
+    --mint: #ADEFD1FF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: var(--mint);
+}
+
+#button {
+    transform: translate(200%, 200%);
+    display: block;
+    width: 20%;
+    border-radius: 16px;
+    background: #04AA6D;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+img {
+    width: 100%;
+    height: 280px;
+}
+
+nav {
+    position: sticky;
+    top: 0%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background: var(--sailor-blue);
+    color: var(--sailor-blue);
+    z-index: 1;
+    padding: 2em 1em 1em 1em;
+}
+
+nav>div {
+    background: var(--mint);
+    font-weight: bold;
+    border-radius: 16px;
+    margin: 0em 3em 0.5em 1em;
+    padding: 0.5em 1.5em 0.5em 1.5em;
+    cursor: pointer;
+    border-radius: 16px;
+}
+
+.text {
+    color: white;
+    margin: 5em;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* 
+input[type=email]:focus,
+input[type=text]:focus {
+    padding: 0.3rem;
+    color: red;
+    border: 1px black solid; 
+ } 
+ form {
+    width: 100%;
+    margin: 5em 5em 5em 5em;
+}
+
+form>[placeholder] {
+    color: var(--sailor-blue);
+}
+
+form>input {
+    border-radius: 16px;
+    width: 20%;
+    line-height: 1.5;
+    color: var(--sailor-blue);
+    margin-right: 2em;
+}
+
+#submit {
+    background: black;
+    color: white;
+    padding: 0.3rem;
+    width: 10%;
+}
+*/
+
+@media (max-width:650px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+        border-radius: 16px;
+        overflow: hidden;
+        flex-wrap: wrap;
+    }
+    img {
+        width: 120%;
+        height: 200px;
+    }
+    #button {
+        width: auto;
+    }
+}
+
+@media (max-width:350px) {
+    img {
+        display: none;
+    }
+}
